@@ -35,5 +35,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.4.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm test"
+    }
   }
 }
