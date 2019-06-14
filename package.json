@@ -9,7 +9,7 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.development.js",
     "test": "./node_modules/.bin/jest --no-cache",
-    "lint": "eslint --ext .js src",
+    "lint": "./node_modules/.bin/eslint --ext .js src",
     "build": "./node_modules/.bin/webpack --config webpack/webpack.production.js"
   },
   "devDependencies": {
