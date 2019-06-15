@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const config = {
   // https://webpack.js.org/concepts#entry
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, '../src/index.js'),
   // https://webpack.js.org/concepts#output
   output: {
     path: path.resolve(__dirname, '../build'),
