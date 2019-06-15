@@ -1,0 +1,15 @@
+[ignore]
+.*/dist/.*
+.*/build/.*
+.*/coverage/.*
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
