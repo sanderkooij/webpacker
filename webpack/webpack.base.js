@@ -10,6 +10,7 @@ const config = {
     path: path.resolve(__dirname, '../build'),
     filename: '[name].[contenthash].js',
   },
+  // https://webpack.js.org/concepts/#loaders
   module: {
     rules: [{
       test: /\.js$/,
