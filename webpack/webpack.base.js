@@ -13,14 +13,21 @@ const config = {
   module: {
     rules: [{
       test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'eslint-loader',
+      exclude: [
+        /node_modules/,
+        /jest/,
+        /cypress/,
+      ],
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'],
+        plugins: ['@babel/plugin-transform-runtime'],
+      },
     }, {
       test: /\.js$/,
-      exclude: /\(node_modules|jest|cypress)/,
-      loader: 'babel-loader',
-      presets: ['@babel/preset-env'],
-      plugins: ['@babel/plugin-transform-runtime'],
+      exclude: /node_modules/,
+      loader: 'eslint-loader',
+      enforce: 'pre',
     }],
   },
   // https://webpack.js.org/concepts#plugins
