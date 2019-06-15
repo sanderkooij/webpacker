@@ -17,10 +17,14 @@ const config = {
         /node_modules/,
         /jest/,
         /cypress/,
+        /coverage/,
       ],
       loader: 'babel-loader',
       options: {
-        presets: ['@babel/preset-env'],
+        presets: [
+          '@babel/preset-env',
+          '@babel/preset-flow',
+        ],
         plugins: ['@babel/plugin-transform-runtime'],
       },
     }, {

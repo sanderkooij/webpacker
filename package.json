@@ -1,7 +1,7 @@
 {
   "name": "milli-vanilli",
   "version": "1.0.0",
-  "description": "Vanilla JS Boilerplate",
+  "description": "Webpack boilerplate for writing javascript applications",
   "main": "index.js",
   "author": "Nick Groenewegen",
   "license": "MIT",
