@@ -3,12 +3,19 @@ const config = (api) => {
 
   return {
     presets: [
-      '@babel/preset-env',
+      ['@babel/preset-env', {
+        modules: false,
+      }],
       '@babel/preset-flow',
     ],
     plugins: [
       '@babel/plugin-transform-runtime',
     ],
+    env: {
+      test: {
+        plugins: ['@babel/plugin-transform-modules-commonjs'],
+      },
+    },
   }
 }
 

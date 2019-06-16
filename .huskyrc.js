@@ -9,7 +9,7 @@ const config = {
     'pre-push': tasks([
       'npm test',
     ]),
-    'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS'
+    'commit-msg': 'npx commitlint -E HUSKY_GIT_PARAMS'
   },
 }
 

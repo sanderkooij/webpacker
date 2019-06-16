@@ -21,13 +21,6 @@ const config = {
         /coverage/,
       ],
       loader: 'babel-loader',
-      options: {
-        presets: [
-          '@babel/preset-env',
-          '@babel/preset-flow',
-        ],
-        plugins: ['@babel/plugin-transform-runtime'],
-      },
     }, {
       test: /\.js$/,
       exclude: /node_modules/,

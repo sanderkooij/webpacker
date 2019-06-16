@@ -1,4 +1,5 @@
-// @flow
-export default function sayHelloTo(name: string): string {
-  return `Hello ${name}!`
-}
+import { square } from './helpers'
+
+const squared = square(2)
+// eslint-disable-next-line
+console.log(squared)

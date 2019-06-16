@@ -7,16 +7,18 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.development.js",
-    "test": "./node_modules/.bin/jest --no-cache",
-    "test:e2e": "./node_modules/.bin/cypress open",
-    "lint": "./node_modules/.bin/eslint --ext .js jest webpack src",
-    "typecheck": "./node_modules/.bin/flow",
-    "build": "./node_modules/.bin/webpack --config webpack/webpack.production.js"
+    "start": "npx webpack-dev-server --config webpack/webpack.development.js",
+    "test": "npx jest --no-cache",
+    "test:e2e": "npx cypress open",
+    "lint": "npx eslint --ext .js jest webpack src",
+    "typecheck": "npx flow",
+    "build": "npx webpack --config webpack/webpack.development.js",
+    "dist": "npx webpack --config webpack/webpack.production.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-flow": "^7.0.0",
