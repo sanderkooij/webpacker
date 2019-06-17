@@ -16,6 +16,7 @@ const config = {
       test: /\.js$/,
       exclude: [
         /node_modules/,
+        /flow-typed/,
         /jest/,
         /cypress/,
         /coverage/,
@@ -23,7 +24,10 @@ const config = {
       loader: 'babel-loader',
     }, {
       test: /\.js$/,
-      exclude: /node_modules/,
+      exclude: [
+        /node_modules/,
+        /flow-typed/,
+      ],
       loader: 'eslint-loader',
       enforce: 'pre',
     }],
