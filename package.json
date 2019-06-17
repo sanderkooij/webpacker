@@ -9,8 +9,9 @@
   "scripts": {
     "start": "npx webpack-dev-server --config webpack/webpack.development.js",
     "test": "npx jest --no-cache",
-    "cypress": "npx cypress open",
-    "lint": "npx eslint --ext .js jest webpack src",
+    "cypress:ci": "npx cypress run",
+    "cypress:interactive": "npx cypress open",
+    "lint": "npx eslint --ext .js cypress jest webpack src",
     "typecheck": "npx flow",
     "build": "npx webpack --config webpack/webpack.development.js",
     "dist": "npx webpack --config webpack/webpack.production.js"
