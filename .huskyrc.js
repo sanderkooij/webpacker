@@ -8,6 +8,7 @@ const config = {
     ]),
     'pre-push': tasks([
       'npm test',
+      'npm run cypress:ci',
     ]),
     'commit-msg': 'npx commitlint -E HUSKY_GIT_PARAMS'
   },
