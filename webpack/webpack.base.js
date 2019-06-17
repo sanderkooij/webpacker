@@ -27,6 +27,7 @@ const config = {
       exclude: [
         /node_modules/,
         /flow-typed/,
+        /coverage/,
       ],
       loader: 'eslint-loader',
       enforce: 'pre',
