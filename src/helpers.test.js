@@ -3,6 +3,7 @@ import {
   square,
   pickValues,
   fromPairs,
+  preventDefault,
 } from './helpers'
 
 describe('square', () => {
@@ -21,5 +22,14 @@ describe('pickValues', () => {
 describe('fromPairs', () => {
   it('should create an object from the passed key/value pairs', () => {
     expect(fromPairs([['a', 1], ['b', 2]])).toEqual({ a: 1, b: 2 })
+  })
+})
+
+describe('preventDefault', () => {
+  it('Should correctly call preventDefault on the passed event object', () => {
+    const event = new Event('mocked')
+    jest.spyOn(event, 'preventDefault')
+    preventDefault(event)
+    expect(event.preventDefault).toHaveBeenCalled()
   })
 })

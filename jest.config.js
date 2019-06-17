@@ -5,9 +5,6 @@ const config = {
   setupFilesAfterEnv: [
     '<rootDir>/jest/setup.js',
   ],
-  transform: {
-    '^.+\\.js?$': 'babel-jest',
-  },
   collectCoverage: true,
   coverageThreshold: {
     global: {
