@@ -11,23 +11,23 @@ Make sure you have the latest version of [Node](https://nodejs.org/en/) installe
 Fork the repository and using your command line run `npm install` or `yarn`.
 This will install both run-time project dependencies and developer tools listed in [package.json](package.json) file.
 
-**Development**
+###### Development
 Running `npm start` or `yarn start` builds the app and fires up a local Webpack devServer listening on port 8080. http://localhost:8080/. Hot Module Replacement (HMR) is not enabled by default in this boilerplate.
 
-**Testing**
+###### Testing
 Both [Jest](https://jestjs.io/) and [Cypress](https://www.cypress.io/) are installed in this boilerplate. Jest is used for unit testing and Cypress for end to end testing.
 
 * Running `npm test` or `yarn test` will start the Jest testrunner and runs all your defined unit tests. 
 * Running `npm run cypress:interactive` or `yarn cypress:interactive` will start the cypress test runner in the interactive mode.
 * Running `npm run cypress:ci` or `yarn cypress:ci` will start the cypress test runner in ci mode.
 
-**Production**
+###### Production
 Webpack is configured with some additional optimizations for production. The reasoning behind them can be read [here](#webpack).
 
 * Running `npm run dist` or `yarn dist` builds the app for production and generates a build folder containing your production assets.
 * Running `npm run build` or `yarn build` builds the app without the optimizations enabled. This could be usefull for debugging purposes.
 
-**Quality Assurance**
+###### Quality Assurance
 Some QA tasks have been added to allow you to easily check your codebase.
 
 * Running `npm run lint` or `yarn lint` runs ESLint to check your codebase. Note that a webpack eslint-loader is also used to check your codebase when running webpack.
