@@ -31,8 +31,17 @@ Some QA tasks have been added to allow you to easily check your codebase.
 
 Additionally this boilerplate uses [Husky](https://github.com/typicode/husky) and [Commitlint](https://commitlint.js.org/#/guides-local-setup) to run QA tasks on git commit and push hooks. Commit messages are tested against [conventional commit](https://www.conventionalcommits.org) guidelines.
 
+## Notes
+This boilerplate deliberately contains no webpack loaders for serving CSS or SASS. This allows you to to choose between using traditional CSS/SASS or CSS in Javascript for styling purposes. Below you can find a list to these specific loaders and libraries.
+
+* [CSS-Loader](https://github.com/webpack-contrib/css-loader)
+* [SASS-Loader](https://github.com/webpack-contrib/sass-loader)
+* [CSS extraction plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
+* [Emotion](https://emotion.sh/docs/introduction)
+* [Styled Components](https://www.styled-components.com/)
+
 ## Contributing
-Feel free to contribute! :)
+Feel free to contribute and make this boilerplate even better.
 
 ## License
 MIT
