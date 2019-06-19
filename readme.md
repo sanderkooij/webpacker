@@ -1,5 +1,4 @@
 # Webpacker
----
 A webpack boilerplate for building javascript applications.
 
 Tired of constantly installing dependencies and setting up your development workflow whenever you start a project? Now you can just fork this boilerplate and be up and running in no time. From development on your local machine to running a production build, we got you covered using some of the best tools out there helping you write awesome code!
@@ -7,7 +6,6 @@ Tired of constantly installing dependencies and setting up your development work
 Interested in what is being used and what the motivations are? Skip to [tooling](#tooling)
 
 ## Getting started
----
 Make sure you have the latest version of [Node](https://nodejs.org/en/) installed. This will include [npm](https://www.npmjs.com/), the node package manager. Alternatively install [Yarn](https://yarnpkg.com/lang/en/) if you like to use it as package manager.
 
 Fork the repository and using your command line run `npm install` or `yarn`.
@@ -40,15 +38,14 @@ There is no eslint:fix command. Although eslint can fix certain things we believ
 Additionally we use [Husky](https://github.com/typicode/husky) and [Commitlint](https://commitlint.js.org/#/guides-local-setup) to run certain tasks on git hooks and check commit messages. More on the reasoning behind these tools can be found [here](#husky-and-commit-lint).
 
 ## Contributing
----
 Feel free to contribute! :)
 
 ## License
----
 MIT
 
-## Tooling
 ---
+
+## Tooling
 
 ##### Webpack
 [Webpack](https://webpack.js.org/) is used as our asset bundler. Webpack does alot for us out of the box and can be set up with zero configuration. This boilerplate however has additional configurations.
