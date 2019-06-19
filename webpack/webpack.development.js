@@ -10,6 +10,9 @@ const config = {
   devServer: {
     contentBase: path.resolve(__dirname, '../dist'),
   },
+  optimization: {
+    usedExports: true,
+  },
 }
 
 module.exports = merge(baseConfig, config)

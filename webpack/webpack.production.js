@@ -13,7 +13,7 @@ const config = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
-          chunks: 'all',
+          chunks: 'initial',
         },
       },
     },
