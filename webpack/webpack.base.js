@@ -16,12 +16,11 @@ const config = {
       test: /\.js$/,
       exclude: [
         /node_modules/,
-        /flow-typed/,
-        /jest/,
-        /cypress/,
-        /coverage/,
       ],
       loader: 'babel-loader',
+      options: {
+        cacheDirectory: true,
+      },
     }, {
       test: /\.js$/,
       exclude: [
