@@ -9,6 +9,7 @@ const config = {
   stats: 'minimal',
   devServer: {
     contentBase: path.resolve(__dirname, '../dist'),
+    port: 8080,
   },
   optimization: {
     usedExports: true,

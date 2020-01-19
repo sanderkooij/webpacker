@@ -4,7 +4,6 @@ const config = {
   'hooks': {
     'pre-commit': tasks([
       'npm run lint',
-      'npm run typecheck',
     ]),
     'pre-push': tasks([
       'npm test',

@@ -6,7 +6,6 @@ const config = (api) => {
       ['@babel/preset-env', {
         modules: false,
       }],
-      '@babel/preset-flow',
     ],
     plugins: [
       '@babel/plugin-transform-runtime',
