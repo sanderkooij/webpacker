@@ -27,7 +27,6 @@ Webpack is configured with some additional optimizations for production. The rea
 Some QA tasks have been added to allow you to easily check your codebase.
 
 * Running `npm run lint` or `yarn lint` runs ESLint to check your codebase. Note that a webpack eslint-loader is also used to check your codebase when running webpack.
-* Running `npm run typecheck` or `yarn typecheck` spawns a flow server that typechecks your codebase. Note that flow only checks files that have the // @flow annotation. This allows you to easily opt in.
 
 Additionally this boilerplate uses [Husky](https://github.com/typicode/husky) and [Commitlint](https://commitlint.js.org/#/guides-local-setup) to run QA tasks on git commit and push hooks. Commit messages are tested against [conventional commit](https://www.conventionalcommits.org) guidelines.
 
