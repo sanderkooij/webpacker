@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const config = {
   // https://webpack.js.org/concepts#entry
-  entry: path.resolve(__dirname, '../src/index.js'),
+  entry: path.resolve(__dirname, '../src/index.jsx'),
   // https://webpack.js.org/concepts#output
   output: {
     path: path.resolve(__dirname, '../build'),
@@ -13,7 +13,7 @@ const config = {
   // https://webpack.js.org/concepts/#loaders
   module: {
     rules: [{
-      test: /\.js$/,
+      test: /\.js(x)$/,
       exclude: [
         /node_modules/,
       ],
@@ -22,7 +22,7 @@ const config = {
         cacheDirectory: true,
       },
     }, {
-      test: /\.js$/,
+      test: /\.js(x)$/,
       exclude: [
         /node_modules/,
         /flow-typed/,
